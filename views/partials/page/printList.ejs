@@ -1,0 +1,9 @@
+<div class="container">
+  <% if (typeof(collection) !== "undefined") { %>
+    <ul class="list-inline success">
+        <% for(var i = 0; i < collection.length; i++) { %>
+          <li><a class="btn btn-success"><%= collection[i] %></a></li>
+        <% } %>
+    </ul>
+  <% } %>
+</div> <!-- Container bootstrap Div -->
