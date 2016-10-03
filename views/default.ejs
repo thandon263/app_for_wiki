@@ -2,11 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><% include partials/page/head.ejs %></head>
-  <body class="<%= classname %>">
-    <% include partials/page/head.ejs %>
-    <% include partials/page/content.ejs %>
-    <% include partials/page/printList.ejs %>
+  <body class="<%= classname %> col-mx-12">
+    <% include partials/page/header.ejs %>
+    <div class="row">
+        <div class="">
+          <% include partials/page/printList.ejs %>
+        </div>
+        <div class="">
+          <% include partials/page/content.ejs %>
+          <% include partials/page/jsdefaults.ejs %>
+        </div>
+
+    </div>
+    <div class="extra-content">
+
+    </div>
     <% include partials/page/footer.ejs %>
-    <% include partials/page/jsdefaults.ejs %>
   </body>
 </html>
